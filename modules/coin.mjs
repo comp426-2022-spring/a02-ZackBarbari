@@ -43,7 +43,7 @@ function coinFlip() {
 
 function coinFlips(flips) {
   const values = []
-  for (i = 0; i < flips; i++) {
+  for (let i = 0; i < flips; i++) {
     values[i] = coinFlip()
   }
   return values
@@ -63,10 +63,10 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  headnum = 0
-  tailnum = 0
+  let headnum = 0
+  let tailnum = 0
 array.forEach(element => 
-  { if (element = "heads") {
+  { if (element == "heads") {
     headnum += 1
   } else {
     tailnum += 1
