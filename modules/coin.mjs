@@ -86,13 +86,15 @@ array.forEach(element =>
  */
 
 function flipACoin(call) {
-  flip = coinFlip()
-  if (call = flip) {
-    result = "win"
+  let coin = { call: call, flip: "NULL", result: "NULL"}
+  let flip = coinFlip()
+  coin.flip = flip
+  if (call == flip) {
+    coin.result = "win"
   } else {
-    result = "lose"
+    coin.result = "lose"
   }
-  return "call: " + call + ", flip: " + flip + ", result: " + result
+  return coin
 }
 
 
