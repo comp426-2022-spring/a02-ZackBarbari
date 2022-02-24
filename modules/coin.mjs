@@ -72,7 +72,7 @@ array.forEach(element =>
     tailnum += 1
   }
  })
- return "tails: " + tailnum + ", heads: " + headnum
+ return "{ tails: " + tailnum + ", heads: " + headnum + " }"
 }
 
 /** Flip a coin!
