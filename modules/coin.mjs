@@ -63,16 +63,15 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  let headnum = 0
-  let tailnum = 0
+  let count = { heads: 0, tails: 0 }
 array.forEach(element => 
   { if (element == "heads") {
-    headnum += 1
+    count.heads += 1
   } else {
-    tailnum += 1
+    count.tails += 1
   }
  })
- return "{ tails: " + tailnum + ", heads: " + headnum + " }"
+ return count
 }
 
 /** Flip a coin!
